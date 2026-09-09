@@ -98,7 +98,7 @@ function renderTable(k){const c=DATA.competitors.find(x=>x.key===k),st=state[k];
   document.getElementById('bd-'+k).innerHTML=rows.map(r=>`<tr>
     <td>${r[0]}</td><td>${r[15]?`<a href="${r[15]}" target="_blank">${r[1]}</a>`:r[1]}</td><td>${r[2]||'<span class=dash>–</span>'}</td><td>${r[3]||'<span class=dash>–</span>'}</td>
     <td class="num">$${(+r[4]).toFixed(2)}</td><td class="num">$${(+r[5]).toFixed(2)}</td><td class="num">${r[6]}%</td>
-    <td class="num">${r[7]?'<span class="tag A">Y</span>':'<span class=dash>–</span>'}</td><td class="num">${r[8]}%</td>
+    <td class="num">${r[7]?'<span class="tag A">Y</span>':'<span class=dash>–</span>'}</td>
     <td><span class="tag ${r[9]}">${TIER[r[9]]}</span></td>
     <td>${r[10]?(r[16]?`<a href="${r[16]}" target="_blank">${r[10]}</a>`:r[10]):'<span class=dash>–</span>'}</td>
     <td class="num">${r[11]!==''?'$'+(+r[11]).toFixed(2):'<span class=dash>–</span>'}</td><td class="num">${r[12]?r[12]+'%':'<span class=dash>–</span>'}</td>
